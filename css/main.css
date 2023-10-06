@@ -10,3 +10,16 @@
     height: 100vh;
     background-position: center;
 }
+
+
+
+.info-contact {
+    background-color: rgba(207, 244, 252, 0.5);
+}
+
+.inicie-contact {
+    background-image: url(../imagenes/navbar/fondohero.jpg);
+    height: 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+}
