@@ -5,13 +5,266 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/* Index Page */
 .inicie-page {
     background-image: url(../imagenes/navbar/fondologo1.jpg);
     height: 100vh;
     background-position: center;
 }
+/* Index Page Finish */
 
 
+/* Team Enter*/
+
+/* Person 1 */
+.person1 {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 2rem; */
+    border: 4px solid black;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(207, 244, 252, 0.5);
+}
+
+.franco {
+    height: max-content;
+    width: 8rem;
+}
+.pA {
+    height: max-content;
+    width: 7rem;
+}
+.medu {
+    height: max-content;
+    width: 7rem;
+}
+.infoF {
+    padding: 2rem;
+    font-size: 0.9rem;
+    justify-content: center;
+    text-align: center;
+}
+/* Person 1 Finish */
+
+/* Person 2 */
+
+.person2 {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 2rem; */
+    border: 4px solid black;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(207, 244, 252, 0.5);
+}
+
+.juani {
+    height: max-content;
+    width: 8rem;
+}
+.tA {
+    height: max-content;
+    width: 7rem;
+}
+.tK {
+    height: max-content;
+    width: 7rem;
+}
+.infoJ {
+    padding: 2rem;
+    font-size: 0.9rem;
+    justify-content: center;
+    text-align: center;
+}
+/* Person 2 Finish */
+
+/* Person 3 */
+
+.person3 {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 2rem; */
+    border: 4px solid black;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(207, 244, 252, 0.5);
+}
+
+.fran {
+    height: 13rem;
+    width: 12rem;
+}
+.axe {
+    height: max-content;
+    width: 7rem;
+}
+.doom {
+    height: max-content;
+    width: 7rem;
+}
+.infoFr {
+    padding: 2rem;
+    font-size: 0.9rem;
+    justify-content: center;
+    text-align: center;
+}
+/* Person 3 Finish */
+
+/* Person 4 */
+
+.person4 {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 2rem; */
+    border: 4px solid black;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(207, 244, 252, 0.5);
+}
+
+.chelo {
+    height: max-content;
+    width: 8rem;
+}
+.earth {
+    height: max-content;
+    width: 7rem;
+}
+.qop {
+    height: max-content;
+    width: 7rem;
+}
+.infoC {
+    padding: 2rem;
+    font-size: 0.9rem;
+    justify-content: center;
+    text-align: center;
+}
+/* Person 4 Finish */
+
+/* Person 5 */
+
+.person5 {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 2rem; */
+    border: 4px solid black;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(207, 244, 252, 0.5);
+}
+
+.jr {
+    height: 14rem;
+    width: 10rem;
+}
+.wr {
+    height: max-content;
+    width: 7rem;
+}
+.wd {
+    height: max-content;
+    width: 7rem;
+}
+.infoJr {
+    padding: 2rem;
+    font-size: 0.9rem;
+    justify-content: center;
+    text-align: center;
+}
+/* Person 5 Finish */
+
+.backimg {
+    background-image: url(../imagenes/navbar/fondoAegis.jpg);
+    /*height: 100%vh;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+/* Team Finish */
+
+/* SHOP Inicie*/
+.container{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+}
+
+.container .box-container .box img{
+    height: 80px;
+}
+
+.container .box-container .box h3{
+    color:#444;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.container .box-container .box p{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+}
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
+
+
+
+/* Contact Page */
 
 .info-contact {
     background-color: rgba(207, 244, 252, 0.5);
@@ -20,6 +273,9 @@
 .inicie-contact {
     background-image: url(../imagenes/navbar/fondohero.jpg);
     height: 100vh;
-    background-position: top;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
+/* Contact Page Finish */
