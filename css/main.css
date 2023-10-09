@@ -255,19 +255,50 @@
     box-shadow: 0 10px 15px rgba(0,0,0,.3);
 }
 
-@media (max-width:768px){
-    .container{
-        padding:20px;
-    }
-}
 /* SHOP FINISH*/
 
 /* Quienes Page */
 
+.text-inicie{
+    text-align: center;
+}
+/* <img class="banner" src="../imagenes/quienes/banner.png" alt="Personas">*/
+.textConteiner {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "mainEvent text-about"
+        "text-aboutus winners"
+        "banner banner";
+    column-gap: 1rem;
+    row-gap: 2rem;
+    align-items: center;
+}
 
+.aboutUs {
+    padding-bottom: 2rem;
+}
+.mainEvent {
+    grid-area: mainEvent;
+    padding-left: 4rem;
+}
+.text-about {
+    grid-area: text-about;
+    padding-top: 10rem;
+}
+.winners {
+    grid-area: winners;
+    justify-content: center;
+}
+.text-aboutus {
+    grid-area: text-aboutus;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Quienes Finish */
-
 
 /* Contact Page */
 
@@ -293,3 +324,32 @@
     width: 100%;
 }
 /* Contact Page Finish */
+
+/* Media query */
+
+@media (max-width: 1576px) {
+    .winners {
+        padding-left: 7rem;
+    }
+}
+
+@media (max-width: 1460px) {
+    .aboutUs {
+        padding-bottom: 0rem;
+    }
+    .mainEvent {
+        padding-left: 0rem;
+    }
+    .text-about {
+        padding-top: 0rem;
+    }
+    .winners {
+        padding-left: 0rem;
+    }
+}
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
