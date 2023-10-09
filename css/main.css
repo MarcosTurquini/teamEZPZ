@@ -193,7 +193,6 @@
 
 /* SHOP Inicie*/
 .container{
-
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -261,21 +260,36 @@
         padding:20px;
     }
 }
+/* SHOP FINISH*/
 
+/* Quienes Page */
+
+
+
+/* Quienes Finish */
 
 
 /* Contact Page */
 
+.icons-reds {
+    font-size: 2rem;
+}
 .info-contact {
     background-color: rgba(207, 244, 252, 0.5);
 }
 
 .inicie-contact {
     background-image: url(../imagenes/navbar/fondohero.jpg);
-    height: 100vh;
+    /*height: 100vh; */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    text-align: -webkit-center;
+}
+
+.contactAndForm {
+    margin-top: 2.5rem;
+    width: 100%;
 }
 /* Contact Page Finish */
