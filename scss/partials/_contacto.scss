@@ -1,0 +1,18 @@
+.inicie-contact {
+    background-image: url(../imagenes/navbar/fondohero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    .info-contact {
+        background-color: $colorgris;
+    }
+    .icons-reds {
+        font-size: 2rem;
+    }
+    .contactAndForm {
+        margin-top: 2.5rem;
+        width: 100%;
+    }
+}
