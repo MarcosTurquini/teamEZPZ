@@ -12,6 +12,20 @@
   background-position: center;
 }
 
+.tittleTeam {
+  text-align: center;
+  color: black;
+}
+
+.allPerson {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url(../imagenes/navbar/fondoAegis.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
 .allPerson .person1 {
   display: flex;
   flex-wrap: wrap;
@@ -39,7 +53,6 @@
   justify-content: center;
   text-align: center;
 }
-
 .allPerson .person2 {
   display: flex;
   flex-wrap: wrap;
@@ -67,7 +80,6 @@
   justify-content: center;
   text-align: center;
 }
-
 .allPerson .person3 {
   display: flex;
   flex-wrap: wrap;
@@ -95,7 +107,6 @@
   justify-content: center;
   text-align: center;
 }
-
 .allPerson .person4 {
   display: flex;
   flex-wrap: wrap;
@@ -123,7 +134,6 @@
   justify-content: center;
   text-align: center;
 }
-
 .allPerson .person5 {
   display: flex;
   flex-wrap: wrap;
@@ -151,13 +161,33 @@
   justify-content: center;
   text-align: center;
 }
-
-.backimg {
-  background-image: url(../imagenes/navbar/fondoAegis.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+.allPerson .person6 {
+  display: flex;
+  flex-wrap: wrap;
+  border: 4px solid #000000;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(207, 244, 252, 0.5019607843);
+}
+.allPerson .person6 .topson {
+  height: 14rem;
+  width: 10rem;
+  object-fit: cover;
+}
+.allPerson .person6 .wr {
+  height: max-content;
+  width: 7rem;
+}
+.allPerson .person6 .wd {
+  height: max-content;
+  width: 7rem;
+}
+.allPerson .person6 .infoTS {
+  padding: 2rem;
+  font-size: 0.9rem;
+  justify-content: center;
+  text-align: center;
 }
 
 .container {
@@ -166,21 +196,18 @@
   background-attachment: fixed;
   background-position: center;
 }
-
 .container .heading {
   text-align: center;
   padding-bottom: 15px;
-  color: #fff;
+  color: #000000;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-size: 50px;
 }
-
 .container .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 15px;
 }
-
 .container .box-container .box {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -191,23 +218,19 @@
 .container .box-container .box:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3019607843);
 }
-
 .container .box-container .box img {
   height: 80px;
 }
-
 .container .box-container .box h3 {
   color: rgb(68, 68, 68);
   font-size: 22px;
   padding: 10px 0;
 }
-
 .container .box-container .box p {
   color: rgb(119, 119, 119);
   font-size: 15px;
   line-height: 1.8;
 }
-
 .container .box-container .box .btn {
   margin-top: 10px;
   display: inline-block;
@@ -221,10 +244,6 @@
   letter-spacing: 1px;
 }
 
-body {
-  background-color: #f2f2f2;
-}
-
 .heading {
   width: 90%;
   display: flex;
@@ -234,15 +253,13 @@ body {
   text-align: center;
   margin: 20px auto;
 }
-
 .heading h1 {
   font-size: 50px;
   color: rgb(0, 0, 0);
   margin-bottom: 25px;
   position: relative;
 }
-
-.heading h1::after {
+.heading h1 h1::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -251,47 +268,45 @@ body {
   margin: 0 auto;
   background-color: #04067c;
 }
-
 .heading p {
   font-size: 18px;
   color: rgb(102, 102, 102);
   margin-bottom: 35px;
 }
-
-.container {
+.heading .container {
   width: 90%;
   margin: 0 auto;
   padding: 10px 20px;
 }
-.container .about {
+.heading .container .about {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-.container .about .about-image {
+.heading .container .about .about-image {
   flex: 1;
   margin-right: 40px;
   overflow: hidden;
 }
-.container .about .about-image img {
+.heading .container .about .about-image img {
   max-width: 100%;
   height: auto;
   display: block;
   transition: 0.5s ease;
 }
-.container .about .about-image:hover img {
+.heading .container .about .about-image:hover img {
   transform: scale(1.2);
 }
-.container .about .about-content {
+.heading .container .about .about-content {
   flex: 1;
 }
-.container .about .about-content h2 {
+.heading .container .about .about-content h2 {
   font-size: 23px;
   margin-bottom: 15px;
   color: #333333;
 }
-.container .about .about-content p {
+.heading .container .about .about-content p {
   font-size: 18px;
   line-height: 1.5;
   color: #666666;
@@ -325,7 +340,6 @@ body {
   padding-bottom: 25px;
   color: #4c4d4d;
 }
-
 .footer .social a {
   font-size: 24px;
   color: inherit;
@@ -339,12 +353,10 @@ body {
   margin: 0 8px;
   opacity: 0.75;
 }
-
 .footer .social a:hover {
   opacity: 0.9;
 }
-
-.footer ul {
+.footer .list {
   margin-top: 0;
   padding: 0;
   list-style: none;
@@ -353,22 +365,18 @@ body {
   margin-bottom: 0;
   text-align: center;
 }
-
-.footer ul li a {
+.footer .list li {
+  display: inline-block;
+  padding: 0 15px;
+}
+.footer .list li a {
   color: inherit;
   text-decoration: none;
   opacity: 0.8;
 }
-
-.footer ul li {
-  display: inline-block;
-  padding: 0 15px;
-}
-
-.footer ul li a:hover {
+.footer .list li a:hover {
   opacity: 1;
 }
-
 .footer .copyright {
   margin-top: 15px;
   text-align: center;
@@ -376,6 +384,11 @@ body {
   color: #aaaaaa;
 }
 
+@media screen and (max-width: 991px) {
+  .allPerson {
+    grid-template-columns: 1fr;
+  }
+}
 @media screen and (max-width: 768px) {
   .heading {
     padding: 0px 20px;
